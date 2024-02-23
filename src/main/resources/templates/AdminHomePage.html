@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="en">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Admin Home Page</title>
+</head>
+
+<body style="text-align: center; background-color: bisque;">
+
+	<table style="text-align: center;align-items: center;width: 100%; border: 1px solid;">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Email</th>
+				<th>Name Of Food</th>
+				<th>Date Of Cooking</th>
+				<th>Time Of Cooking</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:if="${list.empty}">
+				<td> No Donor Available to donate</td>
+			</tr>
+			<tr th:each="l:${list}">
+				<td th:text="${l.id}"></td>
+				<td th:text="${l.email}"></td>
+				<td th:text="${l.nameOfFood}"></td>
+				<td th:text="${l.dateOfCooking}"></td>
+				<td th:text="${l.timeOfCooking}"></td>
+				<td><button th:action="@{/donoraccept/{id}{id=${l.id}}}" type="submit" name="accept" style="background-color: chartreuse;color: black;">Accept</button>
+					<button style="background-color: brown;color: black;" type="submit" name="cancel">Cancel</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>

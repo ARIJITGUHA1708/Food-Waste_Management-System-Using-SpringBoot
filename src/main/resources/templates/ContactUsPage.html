@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Contact Us : ShareNess</title>
+</head>
+<style>
+	body {
+		background-color: #3040c4;
+	}
+
+	.container {
+		font-family: "Arial";
+		max-width: 320px;
+		margin: 0px auto;
+		padding: 16px;
+		background-color: #ffffff;
+	}
+
+	input {
+		width: 94%;
+		padding: 8px;
+		margin: 8px 0px;
+		border: 1px solid #dddddd;
+	}
+
+	textarea {
+		width: 94%;
+		padding: 8px;
+		margin: 8px 0px;
+		border: 1px solid #dddddd;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+		background-color: #3040c4;
+		color: white;
+		padding: 12px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+</style>
+
+<body>
+
+	<div class="container">
+
+		<form action="/SendContactUsPageInformation" method="post">
+
+			<h1>Contact Us ShareNess</h1>
+			<p>Please fill this form with a message. We will get back in 48 hours.</p>
+			<!--Input  tag specifies an input field where the user can enter data-->
+			<input type="text" name="name" placeholder="Name" required autofocus>
+			<input type="email" name="email" placeholder="Email" required maxlength="30">
+			<input type="tel" placeholder="Mobile Number" name="mobile" required maxlength="10">
+			<textarea placeholder="Message" name="message" required></textarea>
+			<input type="submit" value="Submit" name="submit">
+		</form>
+	</div>
+
+
+</body>
+
+</html>

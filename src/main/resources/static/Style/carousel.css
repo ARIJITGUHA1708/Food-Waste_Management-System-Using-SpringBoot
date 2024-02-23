@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+.carousel-item{
+    height: 1000px;
+} 
+.carousel-item img{
+    height: 1000px;
+}
+.navbar-nav .nav-item .nav-link {
+    color: navajowhite;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: aqua;
+}

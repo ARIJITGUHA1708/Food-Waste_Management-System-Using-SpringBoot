@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+.bg {
+  /* The image used */
+  background-image: url("/Images/pic.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h3 :hover
+{
+	color: aqua;
+}
+h4
+{
+	color: red;
+}
+p{
+	color: red;
+}
